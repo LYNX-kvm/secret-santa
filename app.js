@@ -8,7 +8,7 @@ const pairs = {
       };
 
       function reveal() {
-        const secret = document.getElementById("secretInput").value.trim();
+        const secret = document.getElementById("secretInput").value.trim().toLowerCase();
         const result = document.getElementById("result");
 
         if (pairs[secret]) {
