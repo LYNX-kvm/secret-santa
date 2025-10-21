@@ -21,7 +21,17 @@
         </ul>
       </nav>
 
-      <main></main>
+      <main>
+        <h1>🎁 Secret Santa</h1>
+        <p>Type the secret word given to you by Kato to see who you're getting a gift for!</p>
+
+        <input type="text" id="secretInput" placeholder="Enter your secret word">
+
+        <p>Press the button to reveal who you're getting a gift for (only works after typing secret word!)</p>
+        <button onclick="reveal()">Reveal</button>
+
+        <div id="result"></div>
+      </main>
     </div>
 
     <footer class="footer-container">
@@ -43,5 +53,25 @@
         /></a>
       </div>
     </footer>
+
+    <script>
+      const pairs = {
+        koekie: {name:"Stacey", receiver:"Kiany"},
+        leftie: {name:"Kiany", receiver:"Kato" },
+        cutie: {name:"Kato", receiver:"Stacey"}
+      };
+
+      function reveal() {
+        const secret = document.getElementById("secretInput").value.trim();
+        const result = document.getElementById("result");
+
+        if (pairs[secret]){
+          const {name,receiver} = pairs[secret];
+          result.textContent =  `${name}, you're getting a gift for ${receiver}! 🎁`;
+        } else {
+          result.textContent = "Invalid secret word. Try again!";
+        }
+      }
+    </script>
   </body>
 </html>
