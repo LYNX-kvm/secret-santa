@@ -1,6 +1,5 @@
 import random
 
-
 friends = ["Kato", "Kiany", "Chloe", "Stacey", "Luiz", "Karo"]
 secrets = ["dildo", "koekie", "honda", "naruto", "piepschuim", "anaal"]
 
@@ -14,4 +13,3 @@ while any(giver == receiver for giver, receiver in zip(givers, receivers)):
 
 for keyword, (giver, receiver) in zip(secrets, zip(givers, receivers)):
   print(f'{keyword}: {{name:"{giver}", receiver:"{receiver}"}}')
-

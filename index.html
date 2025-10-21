@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+      <script src="app.js" defer></script>
     <title></title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -63,29 +64,5 @@
       </div>
     </footer>
 
-    <script>
-      // list of names to randomize: Luiz, Kato, Kiany, Stacey, Karo, Chloe (6)
-
-      const pairs = {
-        dildo: { name: "Kato", receiver: "Chloe" },
-        koekie: { name: "Luiz", receiver: "Karo" },
-        honda: { name: "Kiany", receiver: "Stacey" },
-        piepschuim: { name: "Chloe", receiver: "Luiz" },
-        naruto: { name: "Stacey", receiver: "Kato" },
-        anaal: { name: "Karo", receiver: "Kiany" },
-      };
-
-      function reveal() {
-        const secret = document.getElementById("secretInput").value.trim();
-        const result = document.getElementById("result");
-
-        if (pairs[secret]) {
-          const { name, receiver } = pairs[secret];
-          result.textContent = `${name}, you're getting a gift for ${receiver}! 🎁`;
-        } else {
-          result.textContent = "Invalid secret word. Try again!";
-        }
-      }
-    </script>
   </body>
 </html>
