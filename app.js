@@ -1,10 +1,10 @@
 const pairs = {
         dildo: {name:"Kato", receiver:"Karo"},
-koekie: {name:"Kiany", receiver:"Stacey"},
-honda: {name:"Chloe", receiver:"Kiany"},
-naruto: {name:"Stacey", receiver:"Kato"},
-piepschuim: {name:"Luiz", receiver:"Chloe"},
-anaal: {name:"Karo", receiver:"Luiz"},
+        koekie: {name:"Kiany", receiver:"Stacey"},
+        honda: {name:"Chloe", receiver:"Kiany"},
+        naruto: {name:"Stacey", receiver:"Kato"},
+        piepschuim: {name:"Luiz", receiver:"Chloe"},
+        anaal: {name:"Karo", receiver:"Luiz"},
       };
 
       function reveal() {
