@@ -12,4 +12,4 @@ while any(giver == receiver for giver, receiver in zip(givers, receivers)):
   random.shuffle(receivers)
 
 for keyword, (giver, receiver) in zip(secrets, zip(givers, receivers)):
-  print(f'{keyword}: {{name:"{giver}", receiver:"{receiver}"}}')
+  print(f'{keyword}: {{name:"{giver}", receiver:"{receiver}"}},')

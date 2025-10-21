@@ -1,0 +1,6 @@
+        dildo: { name: "Kato", receiver: "Chloe" },
+        koekie: { name: "Luiz", receiver: "Karo" },
+        honda: { name: "Kiany", receiver: "Stacey" },
+        piepschuim: { name: "Chloe", receiver: "Luiz" },
+        naruto: { name: "Stacey", receiver: "Kato" },
+        anaal: { name: "Karo", receiver: "Kiany" },
