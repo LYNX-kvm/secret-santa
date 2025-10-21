@@ -1,0 +1,201 @@
+/* Root */
+:root {
+  /* Colors */
+  --brand-bg-main: #fbfffd;
+  --brand-bg-accent: #afd4ce;
+  --brand-text: #4c625e;
+  --brand-focus: #425f50;
+
+  /* Font */
+  --brand-font: "Lexend", sans-serif;
+
+  /* Optional UI accents */
+  --brand-radius: 0.75rem;
+  --brand-transition: 0.25s ease;
+  --brand-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* dark theme
+@media (prefers-color-scheme: dark) {
+  :root {
+    --brand-bg-main: #2b2f2e;
+    --brand-bg-accent: #3f5a56;
+    --brand-text: #f0f5f3;
+    --brand-focus: #9dd3c4;
+  }
+} */
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: var(--brand-bg-main);
+  color: var(--brand-text);
+  font-family: var(--brand-font);
+  line-height: 1.6;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+li {
+  list-style: none;
+}
+
+/* focus */
+a:focus,
+button:focus {
+  outline: 2px solid var(--brand-focus);
+  outline-offset: 3px;
+}
+
+/* layout */
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+}
+
+main {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+
+/* typography */
+h1 {
+  font-size: clamp(2rem, 5vw, 4rem);
+  max-width: 90vw;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  max-width: 70vw;
+  font-weight: 500;
+}
+
+p,
+a {
+  font-size: clamp(1rem, 1.8vw, 1.3rem);
+  max-width: 90vw;
+  color: var(--brand-text);
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  transition: color var(--brand-transition);
+}
+
+a:hover {
+  color: var(--brand-focus);
+}
+
+/* nav */
+.nav-bar {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  background: var(--brand-bg-accent);
+  box-shadow: var(--brand-shadow);
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-links a {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  padding: 0.5rem 1rem;
+  border-radius: var(--brand-radius);
+  transition: background-color var(--brand-transition);
+}
+
+.nav-links a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.current-nav-location {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* footer */
+.footer-container {
+  background-color: var(--brand-bg-accent);
+  color: var(--brand-text);
+  padding: 1.5rem;
+  text-align: center;
+  font-size: clamp(0.9rem, 1.6vw, 1.2rem);
+}
+
+.footer-links {
+  margin-top: 1rem;
+}
+
+.footer-links a img {
+  height: 4vw;
+  max-height: 40px;
+  margin: 1vw 2vw;
+}
+
+/* updates */
+.main-updates,
+.updates {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.projects-grid {
+  margin: 2rem 0;
+}
+
+/* contact */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-info a {
+  margin: 0.5rem 0;
+}
+
+/* buttons and misc */
+button,
+.LinkTree {
+  border: none;
+  padding: 1vh 2vh;
+  border-radius: var(--brand-radius);
+  background-color: var(--brand-bg-accent);
+  color: var(--brand-text);
+  font-family: var(--brand-font);
+  cursor: pointer;
+  transition: background-color var(--brand-transition),
+    transform var(--brand-transition);
+}
+
+button:hover,
+.LinkTree:hover {
+  background-color: var(--brand-focus);
+  transform: scale(1.03);
+}
