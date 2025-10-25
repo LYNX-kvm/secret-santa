@@ -149,6 +149,156 @@ a:hover {
 /* ==========================
    Footer
 ========================== */
+/* ==========================
+   Root Variables
+========================== */
+:root {
+  /* Colors */
+  --brand-bg-main: #fbfffd;
+  --brand-bg-accent: #afd4ce;
+  --brand-text: #4c625e;
+  --brand-focus: #425f50;
+
+  /* Font */
+  --brand-font: "Lexend", sans-serif;
+
+  /* Optional UI accents */
+  --brand-radius: 0.75rem;
+  --brand-transition: 0.25s ease;
+  --brand-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ==========================
+   Global Reset & Base
+========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: var(--brand-bg-main);
+  color: var(--brand-text);
+  font-family: var(--brand-font);
+  line-height: 1.6;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+li {
+  list-style: none;
+}
+
+a:focus,
+button:focus {
+  outline: 2px solid var(--brand-focus);
+  outline-offset: 3px;
+}
+
+/* ==========================
+   Layout
+========================== */
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+}
+
+main {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+
+/* ==========================
+   Typography
+========================== */
+h1 {
+  font-size: clamp(2rem, 5vw, 4rem);
+  max-width: 90vw;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  max-width: 70vw;
+  font-weight: 500;
+}
+
+p,
+a {
+  font-size: clamp(1rem, 1.8vw, 1.3rem);
+  max-width: 90vw;
+  color: var(--brand-text);
+}
+
+/* ==========================
+   Links
+========================== */
+a {
+  text-decoration: none;
+  transition: color var(--brand-transition);
+}
+
+a:hover {
+  color: var(--brand-focus);
+}
+
+/* ==========================
+   Navigation
+========================== */
+.nav-bar {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--brand-bg-accent);
+  gap: 3rem;
+}
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-bottom: 2rem;
+  width: 100%;
+  text-align: center;
+}
+
+.nav-links a {
+  font-size: 3vw;
+  max-width: 70vw;
+  text-decoration: none;
+  border-radius: var(--brand-radius);
+  transition: background-color var(--brand-transition);
+}
+
+.current-nav-location {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.nav-links a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* ==========================
+   Footer
+========================== */
 .footer-container {
   background-color: var(--brand-bg-accent);
   color: var(--brand-text);
@@ -177,6 +327,80 @@ a:hover {
   max-height: 40px;
   margin: 1vw 2vw;
 }
+
+/* ==========================
+   Updates & Projects
+========================== */
+.update-container {
+  margin: 1rem;
+}
+
+.main-updates,
+.updates {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.projects-intro,
+.projects-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: left;
+  max-width: 90vw;
+  margin: 2rem 0;
+  width: 100%;
+}
+/* ==========================
+   Contact
+========================== */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-info a {
+  margin: 0.5rem 0;
+}
+
+/* ==========================
+   About me
+========================== */
+.resume {
+  display: flex;
+  flex-direction: column;
+}
+
+.resume a {
+  margin: 0.5rem 0;
+}
+
+/* ==========================
+   Misc
+========================== */
+
+.resume button,
+.linktree button,
+button {
+  border: none;
+  padding: 1vh 2vh;
+  border-radius: var(--brand-radius);
+  background-color: var(--brand-bg-accent);
+  color: var(--brand-text);
+  font-family: var(--brand-font);
+  cursor: pointer;
+  transition: background-color var(--brand-transition),
+    transform var(--brand-transition);
+}
+
+.resume button:hover,
+.linkTree button:hover,
+button:hover {
+  transform: scale(1.03);
+}
+
 
 /* ==========================
    Misc
