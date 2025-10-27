@@ -1,7 +1,7 @@
 import random
 
-friends = ["Kato", "Kiany", "Chloe", "Stacey", "Luiz", "Karo"]
-secrets = ["dildo", "koekie", "honda", "naruto", "piepschuim", "anaal"]
+friends = ["Kato", "Kiany", "Stacey", "Luiz", "Karo"]
+secrets = ["dildo", "koekie", "naruto", "piepschuim", "anaal"]
 
 givers = friends[:]
 receivers = friends[:]
