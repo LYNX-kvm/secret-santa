@@ -113,7 +113,7 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: var(--brand-bg-accent);
+  background-color: var(--brand-bg-accent);
   gap: 3rem;
 }
 .nav-links {
@@ -400,7 +400,6 @@ button {
 button:hover {
   transform: scale(1.03);
 }
-
 
 /* ==========================
    Misc
